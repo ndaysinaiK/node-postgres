@@ -8,7 +8,6 @@ const { getStream, getSecureStream } = require('./stream')
 const flushBuffer = serialize.flush()
 const syncBuffer = serialize.sync()
 const endBuffer = serialize.end()
-
 // TODO(bmc) support binary mode at some point
 class Connection extends EventEmitter {
   constructor(config) {
